@@ -7,4 +7,4 @@
 # production
 /build
 
-/learning/.env*
+/learning/.env
