@@ -12,6 +12,7 @@ async function main() {
   const db = client.db(dbName);
   const collection = db.collection('mongo_learning');
 
+  //Insert One
   const insertOneResult = await collection.insertOne({
     item:'canvas',
     qty: 100,
@@ -19,6 +20,7 @@ async function main() {
     size: {h: 28, w:35.5, uom: 'cm'}
   });
 
+  //Insert Many
   const insertResult = await collection.insertMany([{ a: 1 }, { a: 2 }, { a: 3 }]);
   console.log('Inserted documents =>', insertResult);
 
